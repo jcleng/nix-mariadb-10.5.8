@@ -37,7 +37,7 @@ To see the contents of the .drv file, run: `nix show-derivation $(nix-instantiat
 
 ```shell
 # 初始化权限
-# 进入scripts文件夹
+# 进入
 cd /nix/store/pxpc4b49rj335yqi027ch1hrsnq6myfl-mariadb-10.5.8/
 
 # 初始化,只能在软件的根目录执行
@@ -60,6 +60,9 @@ vi ~/.my.cnf
 # 运行一次,查看是否有错误
 chmod 777 /nix/store/pxpc4b49rj335yqi027ch1hrsnq6myfl-mariadb-10.5.8/
 mysqld
+# 或者指定data目录
+mysqld --datadir=/nix/store/pxpc4b49rj335yqi027ch1hrsnq6myfl-mariadb-10.5.8/data
+
 # 杀死进程
 sudo pkill mysql
 sudo pkill maria
