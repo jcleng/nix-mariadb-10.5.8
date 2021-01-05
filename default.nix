@@ -23,9 +23,12 @@ with import <nixpkgs> {}; stdenv.mkDerivation {
     # 编译错误再次编译需要删除该文件
     rm -rf CMakeCache.txt
     cmake \
--DCMAKE_INSTALL_PREFIX=$out/mariadb1058 \
--DMYSQL_DATADIR=$out/mariadb1058 \
--DSYSCONFDIR=$out/mariadb1058/etc \
+-DCMAKE_INSTALL_PREFIX=$out \
+-DMYSQL_DATADIR=$out \
+-DSYSCONFDIR=$out/etc \
+-DINSTALL_LIBDIR=$out/lib \
+-DINSTALL_INFODIR=$out/shareinfo \
+-DINSTALL_PLUGINDIR=$out/plugin \
 -DWITH_MYISAM_STORAGE_ENGINE=1 \
 -DWITH_INNOBASE_STORAGE_ENGINE=1 \
 -DWITH_ARCHIVE_STORAGE_ENGINE=1 \
