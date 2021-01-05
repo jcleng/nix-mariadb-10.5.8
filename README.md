@@ -104,3 +104,8 @@ datadir =  /nix/store/pxpc4b49rj335yqi027ch1hrsnq6myfl-mariadb-10.5.8/data
 # log-error=/tmp/mariadb1058.log
 # pid-file=/tmp/mariadb1058.pid
 ```
+
+```shell
+jcleng@DESKTOP-LQ95A7F /n/s/hnjcbp2y3lkkd06aln7z1bkq7f2kk3x2-mariadb-10.5.8> ps aux|grep maria
+jcleng   14536  0.0  0.4 1347148 69404 tty1    Sl   17:29   0:00 /home/jcleng/.nix-profile/bin/mariadbd --basedir=/home/jcleng/.nix-profile --datadir=/nix/store/hnjcbp2y3lkkd06aln7z1bkq7f2kk3x2-mariadb-10.5.8/data --plugin-dir=/nix/store/hnjcbp2y3lkkd06aln7z1bkq7f2kk3x2-mariadb-10.5.8/plugin --log-error=/nix/store/hnjcbp2y3lkkd06aln7z1bkq7f2kk3x2-mariadb-10.5.8/data/DESKTOP-LQ95A7F.err --pid-file=DESKTOP-LQ95A7F.pid --socket=/tmp/mariadb1058.sock --port=3306
+```
