@@ -24,7 +24,7 @@ with import <nixpkgs> {}; stdenv.mkDerivation {
     rm -rf CMakeCache.txt
     cmake \
 -DCMAKE_INSTALL_PREFIX=$out \
--DMYSQL_DATADIR=$out \
+-DMYSQL_DATADIR=$out/data \
 -DSYSCONFDIR=$out/etc \
 -DINSTALL_LIBDIR=$out/lib \
 -DINSTALL_INFODIR=$out/shareinfo \
