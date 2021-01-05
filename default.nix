@@ -11,6 +11,7 @@ with import <nixpkgs> {}; stdenv.mkDerivation {
 
   # Dependencies
   # See: https://nixos.org/nixpkgs/manual/#ssec-stdenv-dependencies
+  # macos不要libaio,linux加libaio
   buildInputs = [ coreutils gcc cmake ncurses bison gnutls bzip2 libaio];
 
   # Build Phases
