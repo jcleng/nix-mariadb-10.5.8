@@ -1,9 +1,6 @@
-# nix-mysql-5.6.35
+# mariadb-10.5.8
 
-```
-tar xvf mysql-5.6.35.tar.gz
-mv mysql-5.6.35 src
-```
+
 ## Build or Install in Nix Environment
 
 ### Build
