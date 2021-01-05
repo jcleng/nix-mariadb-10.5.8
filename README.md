@@ -58,9 +58,9 @@ touch ~/.my.cnf
 vi ~/.my.cnf
 
 # 运行一次,查看是否有错误
-chmod 777 /nix/store/pxpc4b49rj335yqi027ch1hrsnq6myfl-mariadb-10.5.8/
 mysqld
 # 或者指定data目录
+chmod 777 /nix/store/pxpc4b49rj335yqi027ch1hrsnq6myfl-mariadb-10.5.8/data
 mysqld --datadir=/nix/store/pxpc4b49rj335yqi027ch1hrsnq6myfl-mariadb-10.5.8/data
 
 # 杀死进程
