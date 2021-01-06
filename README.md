@@ -1,4 +1,4 @@
-# mariadb-10.5.8
+# mariadb-10.5.8(linux-ubuntu)
 
 
 ## Build or Install in Nix Environment
